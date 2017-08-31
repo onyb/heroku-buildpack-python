@@ -2,7 +2,7 @@
 
 set +e
 runtime-fixer runtime.txt
-PYTHON_VERSION=$(cat runtime.txt)
+PYTHON_VERSION="python-3.6.2"
 
 if [[ "$STACK" != "$CACHED_PYTHON_STACK" ]]; then
     puts-step "Stack has changed from $CACHED_PYTHON_STACK to $STACK, clearing cache"
